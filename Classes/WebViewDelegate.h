@@ -11,13 +11,16 @@
 
 @class Sound;
 @class Dock;
+@class Growl;
 
 @interface WebViewDelegate : NSObject {
 	Sound* sound;
     Dock* dock;
+    Growl* growl;
 }
 
 @property (nonatomic, retain) Sound* sound;
 @property (nonatomic, retain) Dock* dock;
+@property (nonatomic, retain) Growl* growl;
 
 @end

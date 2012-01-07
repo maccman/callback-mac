@@ -9,11 +9,13 @@
 #import "WebViewDelegate.h"
 #import "Sound.h"
 #import "Dock.h"
+#import "GrowlNotifier.h"
 
 @implementation WebViewDelegate
 
 @synthesize sound;
 @synthesize dock;
+@synthesize growl;
 
 - (void) webView:(WebView*)webView windowScriptObjectAvailable:(WebScriptObject*)windowScriptObject
 {
@@ -22,6 +24,9 @@
 
 	if (self.dock == nil) { self.dock = [Dock new]; }
 	[windowScriptObject setValue:self.dock forKey:@"dock"];
+
+	if (self.growl == nil) { self.growl = [GrowlNotifier new]; }
+	[windowScriptObject setValue:self.growl forKey:@"growl"];
 }
 
 /* This logs all errors from Javascript, nifty */

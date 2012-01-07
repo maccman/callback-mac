@@ -20,7 +20,34 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E91E2744148A0AF700DCB657 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E91E2743148A0AF700DCB657 /* index.html */; };
 		FA37DE1514B7FCF60045A520 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE1414B7FCF60045A520 /* Dock.m */; };
+		FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37DE1F14B8044E0045A520 /* Growl.framework */; };
+		FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA37DE2314B808150045A520 /* Growl.framework */; };
+		FA37DE2714B8088D0045A520 /* GrowlNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE2614B8088D0045A520 /* GrowlNotifier.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		FA37DE2114B807F60045A520 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FA37DE2214B807FC0045A520 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -49,6 +76,10 @@
 		E91E2743148A0AF700DCB657 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		FA37DE1314B7FCF60045A520 /* Dock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dock.h; sourceTree = "<group>"; };
 		FA37DE1414B7FCF60045A520 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
+		FA37DE1F14B8044E0045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		FA37DE2314B808150045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
+		FA37DE2514B8088D0045A520 /* GrowlNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; name = GrowlNotifier.h; path = Classes/Commands/GrowlNotifier.h; sourceTree = "<group>"; };
+		FA37DE2614B8088D0045A520 /* GrowlNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrowlNotifier.m; path = Classes/Commands/GrowlNotifier.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				300528CE116DD6D400C4263B /* WebKit.framework in Frameworks */,
+				FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +143,7 @@
 		29B97314FDCFA39411CA2CEA /* callback-mac */ = {
 			isa = PBXGroup;
 			children = (
+				FA37DE2314B808150045A520 /* Growl.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -144,6 +177,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA37DE1F14B8044E0045A520 /* Growl.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
@@ -157,6 +191,8 @@
 				3070C380118B8DB100245025 /* Sound.m */,
 				FA37DE1314B7FCF60045A520 /* Dock.h */,
 				FA37DE1414B7FCF60045A520 /* Dock.m */,
+				FA37DE2514B8088D0045A520 /* GrowlNotifier.h */,
+				FA37DE2614B8088D0045A520 /* GrowlNotifier.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -171,8 +207,10 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				FA37DE2214B807FC0045A520 /* CopyFiles */,
 			);
 			buildRules = (
+				FA37DE2114B807F60045A520 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -233,6 +271,7 @@
 				3070C365118B845100245025 /* WebViewDelegate.m in Sources */,
 				3070C381118B8DB100245025 /* Sound.m in Sources */,
 				FA37DE1514B7FCF60045A520 /* Dock.m in Sources */,
+				FA37DE2714B8088D0045A520 /* GrowlNotifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +302,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../Downloads/Growl-1.3.1-SDK/Framework\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -279,6 +323,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../Downloads/Growl-1.3.1-SDK/Framework\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = callback_mac_Prefix.pch;

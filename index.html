@@ -14,7 +14,9 @@
     }
   </style>
   <script type="text/javascript" charset="utf-8">
-    dock.badge('1')
+      setTimeout(function(){
+       growl.notify({title: 'Test', content: 'Test', priority: 0, sticky: false})
+      }, 5000);
   </script>
 </head>
 <body>
