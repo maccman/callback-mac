@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 Nitobi Software Inc. All rights reserved.
 //
 
-#import "GrowlNotifier.h"
+#import "Growl.h"
 
-@implementation GrowlNotifier
+@implementation Growl
 
 - (id) init {
     if (self = [super init]) {

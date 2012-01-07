@@ -9,7 +9,7 @@
 #import "WebViewDelegate.h"
 #import "Sound.h"
 #import "Dock.h"
-#import "GrowlNotifier.h"
+#import "Growl.h"
 
 @implementation WebViewDelegate
 
@@ -25,7 +25,7 @@
 	if (self.dock == nil) { self.dock = [Dock new]; }
 	[windowScriptObject setValue:self.dock forKey:@"dock"];
 
-	if (self.growl == nil) { self.growl = [GrowlNotifier new]; }
+	if (self.growl == nil) { self.growl = [Growl new]; }
 	[windowScriptObject setValue:self.growl forKey:@"growl"];
 }
 

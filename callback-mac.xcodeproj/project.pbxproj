@@ -22,7 +22,7 @@
 		FA37DE1514B7FCF60045A520 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE1414B7FCF60045A520 /* Dock.m */; };
 		FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37DE1F14B8044E0045A520 /* Growl.framework */; };
 		FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA37DE2314B808150045A520 /* Growl.framework */; };
-		FA37DE2714B8088D0045A520 /* GrowlNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE2614B8088D0045A520 /* GrowlNotifier.m */; };
+		FA37DE2714B8088D0045A520 /* Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE2614B8088D0045A520 /* Growl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -78,8 +78,8 @@
 		FA37DE1414B7FCF60045A520 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
 		FA37DE1F14B8044E0045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FA37DE2314B808150045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
-		FA37DE2514B8088D0045A520 /* GrowlNotifier.h */ = {isa = PBXFileReference; fileEncoding = 4; name = GrowlNotifier.h; path = Classes/Commands/GrowlNotifier.h; sourceTree = "<group>"; };
-		FA37DE2614B8088D0045A520 /* GrowlNotifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrowlNotifier.m; path = Classes/Commands/GrowlNotifier.m; sourceTree = "<group>"; };
+		FA37DE2514B8088D0045A520 /* Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; name = Growl.h; path = Classes/Commands/Growl.h; sourceTree = "<group>"; };
+		FA37DE2614B8088D0045A520 /* Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Growl.m; path = Classes/Commands/Growl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +191,8 @@
 				3070C380118B8DB100245025 /* Sound.m */,
 				FA37DE1314B7FCF60045A520 /* Dock.h */,
 				FA37DE1414B7FCF60045A520 /* Dock.m */,
-				FA37DE2514B8088D0045A520 /* GrowlNotifier.h */,
-				FA37DE2614B8088D0045A520 /* GrowlNotifier.m */,
+				FA37DE2514B8088D0045A520 /* Growl.h */,
+				FA37DE2614B8088D0045A520 /* Growl.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -271,7 +271,7 @@
 				3070C365118B845100245025 /* WebViewDelegate.m in Sources */,
 				3070C381118B8DB100245025 /* Sound.m in Sources */,
 				FA37DE1514B7FCF60045A520 /* Dock.m in Sources */,
-				FA37DE2714B8088D0045A520 /* GrowlNotifier.m in Sources */,
+				FA37DE2714B8088D0045A520 /* Growl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@
 
 #define APP_GROWL_NOTIFICATION @"Growl Notification"
 
-@interface GrowlNotifier : NSObject <GrowlApplicationBridgeDelegate> {
+@interface Growl : NSObject <GrowlApplicationBridgeDelegate> {
 
 }
 
