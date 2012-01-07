@@ -11,4 +11,3 @@
 #define kStartPage @"index.html"
 
 #define kStartFolder @"."
-

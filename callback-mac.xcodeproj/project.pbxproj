@@ -78,7 +78,7 @@
 		FA37DE1414B7FCF60045A520 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
 		FA37DE1F14B8044E0045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FA37DE2314B808150045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
-		FA37DE2514B8088D0045A520 /* Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; name = Growl.h; path = Classes/Commands/Growl.h; sourceTree = "<group>"; };
+		FA37DE2514B8088D0045A520 /* Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Growl.h; path = Classes/Commands/Growl.h; sourceTree = "<group>"; };
 		FA37DE2614B8088D0045A520 /* Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Growl.m; path = Classes/Commands/Growl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -314,6 +314,7 @@
 				GCC_PREFIX_HEADER = callback_mac_Prefix.pch;
 				INFOPLIST_FILE = callback.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = Callback;
 			};
 			name = Debug;
@@ -333,6 +334,7 @@
 				GCC_PREFIX_HEADER = callback_mac_Prefix.pch;
 				INFOPLIST_FILE = callback.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = Callback;
 			};
 			name = Release;

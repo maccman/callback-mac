@@ -23,6 +23,15 @@
 	[self.webView setDownloadDelegate:self.delegate];
 	[self.webView setPolicyDelegate:self.delegate];	
     [self.webView setDrawsBackground:NO];
+    [self.webView setShouldCloseWithWindow:NO];
+
+    WebPreferences *webPrefs = [[WebPreferences alloc] initWithIdentifier:@"callback"];
+    [webPrefs setCacheModel:WebCacheModelDocumentBrowser];
+    [webPrefs setPlugInsEnabled:YES]; 
+    [webPrefs setUserStyleSheetEnabled:NO];
+
+    [self.webView setPreferences:webPrefs];
+    [webPrefs release];
 }
 
 - (id)initWithFrame:(NSRect)frame 
@@ -48,6 +57,5 @@
 	[self.webView setFrame:NSMakeRect(0, 0, size.width, size.height - [[Utils sharedInstance] titleBarHeight:window])];
     [self.webView stringByEvaluatingJavaScriptFromString:@"var e = document.createEvent('Events'); e.initEvent('orientationchange', true, false); document.dispatchEvent(e); "];
 }
-
 
 @end
