@@ -1,24 +1,19 @@
 //
-//  Sound.m
+//  Dock.m
 //  callback-mac
 //
-//  Created by shazron on 10-04-30.
-//  Copyright 2010 Nitobi Software Inc. All rights reserved.
+//  Created by Alex MacCaw on 06/01/2012.
+//  Copyright (c) 2012 Nitobi Software Inc. All rights reserved.
 //
 
-#import "Sound.h"
+#import "Dock.h"
 
+@implementation Dock
 
-@implementation Sound
-
-
-- (void) play:(NSString*)file
+- (void) badge:(NSString*)value
 {
-	NSURL* fileUrl  = [NSURL fileURLWithPath:[[Utils sharedInstance] pathForResource:file]];
-	DebugNSLog(@"Sound file:%@", [fileUrl description]);
-	
-	NSSound* sound = [[[NSSound alloc] initWithContentsOfURL:fileUrl byReference:YES] autorelease];
-	[sound play];
+    NSDockTile *tile = [[NSApplication sharedApplication] dockTile];
+    [tile setBadgeLabel:value];
 }
 
 #pragma mark WebScripting Protocol
@@ -26,7 +21,7 @@
 /* checks whether a selector is acceptable to be called from JavaScript */
 + (BOOL) isSelectorExcludedFromWebScript:(SEL)selector
 {
-    if (selector == @selector(play:))  
+    if (selector == @selector(badge:))  
         return NO;  
     
     return YES;  
@@ -37,8 +32,8 @@
 {
 	id	result = nil;
 	
-	if (aSelector == @selector(play:)) {
-		result = @"play";
+	if (aSelector == @selector(badge:)) {
+		result = @"badge";
 	}
 	
 	return result;

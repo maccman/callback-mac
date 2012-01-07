@@ -8,15 +8,20 @@
 
 #import "WebViewDelegate.h"
 #import "Sound.h"
+#import "Dock.h"
 
 @implementation WebViewDelegate
 
 @synthesize sound;
+@synthesize dock;
 
 - (void) webView:(WebView*)webView windowScriptObjectAvailable:(WebScriptObject*)windowScriptObject
 {
 	if (self.sound == nil) { self.sound = [Sound new]; }
 	[windowScriptObject setValue:self.sound forKey:@"sound"];
+
+	if (self.dock == nil) { self.dock = [Dock new]; }
+	[windowScriptObject setValue:self.dock forKey:@"dock"];
 }
 
 /* This logs all errors from Javascript, nifty */

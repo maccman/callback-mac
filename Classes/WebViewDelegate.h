@@ -10,11 +10,14 @@
 #import <WebKit/WebKit.h>
 
 @class Sound;
+@class Dock;
 
 @interface WebViewDelegate : NSObject {
 	Sound* sound;
+    Dock* dock;
 }
 
 @property (nonatomic, retain) Sound* sound;
+@property (nonatomic, retain) Dock* dock;
 
 @end
