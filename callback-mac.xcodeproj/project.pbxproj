@@ -23,6 +23,7 @@
 		FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37DE1F14B8044E0045A520 /* Growl.framework */; };
 		FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA37DE2314B808150045A520 /* Growl.framework */; };
 		FA37DE2714B8088D0045A520 /* Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE2614B8088D0045A520 /* Growl.m */; };
+		FA5A63E114BA0A3C00E7CC30 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A63E014BA0A3C00E7CC30 /* Path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -80,6 +81,8 @@
 		FA37DE2314B808150045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FA37DE2514B8088D0045A520 /* Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Growl.h; path = Classes/Commands/Growl.h; sourceTree = "<group>"; };
 		FA37DE2614B8088D0045A520 /* Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Growl.m; path = Classes/Commands/Growl.m; sourceTree = "<group>"; };
+		FA5A63DF14BA0A3B00E7CC30 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
+		FA5A63E014BA0A3C00E7CC30 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +196,8 @@
 				FA37DE1414B7FCF60045A520 /* Dock.m */,
 				FA37DE2514B8088D0045A520 /* Growl.h */,
 				FA37DE2614B8088D0045A520 /* Growl.m */,
+				FA5A63DF14BA0A3B00E7CC30 /* Path.h */,
+				FA5A63E014BA0A3C00E7CC30 /* Path.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				3070C381118B8DB100245025 /* Sound.m in Sources */,
 				FA37DE1514B7FCF60045A520 /* Dock.m in Sources */,
 				FA37DE2714B8088D0045A520 /* Growl.m in Sources */,
+				FA5A63E114BA0A3C00E7CC30 /* Path.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

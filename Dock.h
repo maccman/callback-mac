@@ -11,6 +11,9 @@
 @interface Dock : NSObject {
     
 }
-- (void) badge:(NSString*)file;
+- (void) setBadge:(NSString*)value;
+- (NSString *) badge;
+
+@property (readwrite,copy) NSString* badge;
 
 @end

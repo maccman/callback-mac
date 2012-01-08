@@ -1,27 +1,24 @@
 //
-//  Dock.m
+//  Path.m
 //  callback-mac
 //
-//  Created by Alex MacCaw on 06/01/2012.
+//  Created by Alex MacCaw on 08/01/2012.
 //  Copyright (c) 2012 Nitobi Software Inc. All rights reserved.
 //
 
-#import "Dock.h"
+#import "Path.h"
 
-@implementation Dock
+@implementation Path
 
-@synthesize badge;
+@synthesize application;
+@synthesize resource;
 
-- (void) setBadge:(NSString *)value
-{
-    NSDockTile *tile = [[NSApplication sharedApplication] dockTile];
-    [tile setBadgeLabel:value];
+- (NSString *)application {
+    return [[NSBundle mainBundle] bundlePath];
 }
 
-- (NSString *) badge
-{
-    NSDockTile *tile = [[NSApplication sharedApplication] dockTile];
-    return [tile badgeLabel];
+- (NSString *)resource {
+    return [[NSBundle mainBundle] resourcePath];
 }
 
 #pragma mark WebScripting Protocol

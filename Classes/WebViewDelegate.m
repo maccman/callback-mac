@@ -10,23 +10,23 @@
 #import "Sound.h"
 #import "Dock.h"
 #import "Growl.h"
+#import "Path.h"
 
 @implementation WebViewDelegate
 
 @synthesize sound;
 @synthesize dock;
 @synthesize growl;
+@synthesize path;
 
 - (void) webView:(WebView*)webView didClearWindowObject:(WebScriptObject*)windowScriptObject forFrame:(WebFrame *)frame
 {
 	if (self.sound == nil) { self.sound = [Sound new]; }
-	[windowScriptObject setValue:self.sound forKey:@"sound"];
-
 	if (self.dock == nil) { self.dock = [Dock new]; }
-	[windowScriptObject setValue:self.dock forKey:@"dock"];
-
 	if (self.growl == nil) { self.growl = [Growl new]; }
-	[windowScriptObject setValue:self.growl forKey:@"growl"];
+	if (self.path == nil) { self.path = [Path new]; }
+    
+    [windowScriptObject setValue:self forKey:kWebScriptNamespace];
 }
 
 - (void) webView:(WebView*)webView addMessageToConsole:(NSDictionary*)message
@@ -39,6 +39,10 @@
 		  [[message objectForKey:@"sourceURL"] lastPathComponent],	// could be nil
 		  [message objectForKey:@"lineNumber"],
 		  [message objectForKey:@"message"]);
+}
+
+- (void)webView:(WebView *)sender runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WebFrame *)frame {
+	[NSAlert alertWithMessageText:@"Alert" defaultButton:@"OK" alternateButton:nil otherButton:nil informativeTextWithFormat:message];
 }
 
 - (NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element defaultMenuItems:(NSArray *)defaultMenuItems 
@@ -84,7 +88,7 @@
 
 + (BOOL) isKeyExcludedFromWebScript:(const char*)name
 {
-	return YES;
+	return NO;
 }
 
 
