@@ -14,5 +14,6 @@
 }
 
 - (void) play:(NSString*)file;
+- (void) playSystem:(NSString*)name;
 
 @end

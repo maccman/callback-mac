@@ -21,30 +21,19 @@
 	[sound play];
 }
 
+- (void) playSystem:(NSString*) name
+{
+    NSSound *systemSound = [NSSound soundNamed:name];
+	[systemSound play];
+}
+
 #pragma mark WebScripting Protocol
 
-/* checks whether a selector is acceptable to be called from JavaScript */
 + (BOOL) isSelectorExcludedFromWebScript:(SEL)selector
 {
-    if (selector == @selector(play:))  
-        return NO;  
-    
-    return YES;  
+    return NO;
 }
 
-/* helper function so we don't have to have underscores and stuff in js to refer to the right method */
-+ (NSString*) webScriptNameForSelector:(SEL)aSelector
-{
-	id	result = nil;
-	
-	if (aSelector == @selector(play:)) {
-		result = @"play";
-	}
-	
-	return result;
-}
-
-// right now exclude all properties (eg keys)
 + (BOOL) isKeyExcludedFromWebScript:(const char*)name
 {
 	return YES;

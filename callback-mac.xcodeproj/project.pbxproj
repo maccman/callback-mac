@@ -24,6 +24,7 @@
 		FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA37DE2314B808150045A520 /* Growl.framework */; };
 		FA37DE2714B8088D0045A520 /* Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE2614B8088D0045A520 /* Growl.m */; };
 		FA5A63E114BA0A3C00E7CC30 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A63E014BA0A3C00E7CC30 /* Path.m */; };
+		FA5A63E514BA0C4800E7CC30 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A63E414BA0C4800E7CC30 /* App.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -83,6 +84,8 @@
 		FA37DE2614B8088D0045A520 /* Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Growl.m; path = Classes/Commands/Growl.m; sourceTree = "<group>"; };
 		FA5A63DF14BA0A3B00E7CC30 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
 		FA5A63E014BA0A3C00E7CC30 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
+		FA5A63E314BA0C4800E7CC30 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		FA5A63E414BA0C4800E7CC30 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +201,8 @@
 				FA37DE2614B8088D0045A520 /* Growl.m */,
 				FA5A63DF14BA0A3B00E7CC30 /* Path.h */,
 				FA5A63E014BA0A3C00E7CC30 /* Path.m */,
+				FA5A63E314BA0C4800E7CC30 /* App.h */,
+				FA5A63E414BA0C4800E7CC30 /* App.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				FA37DE1514B7FCF60045A520 /* Dock.m in Sources */,
 				FA37DE2714B8088D0045A520 /* Growl.m in Sources */,
 				FA5A63E114BA0A3C00E7CC30 /* Path.m in Sources */,
+				FA5A63E514BA0C4800E7CC30 /* App.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

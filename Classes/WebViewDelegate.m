@@ -11,6 +11,7 @@
 #import "Dock.h"
 #import "Growl.h"
 #import "Path.h"
+#import "App.h"
 
 @implementation WebViewDelegate
 
@@ -18,6 +19,7 @@
 @synthesize dock;
 @synthesize growl;
 @synthesize path;
+@synthesize app;
 
 - (void) webView:(WebView*)webView didClearWindowObject:(WebScriptObject*)windowScriptObject forFrame:(WebFrame *)frame
 {
@@ -25,6 +27,7 @@
 	if (self.dock == nil) { self.dock = [Dock new]; }
 	if (self.growl == nil) { self.growl = [Growl new]; }
 	if (self.path == nil) { self.path = [Path new]; }
+	if (self.app == nil) { self.app = [App new]; }
     
     [windowScriptObject setValue:self forKey:kWebScriptNamespace];
 }
