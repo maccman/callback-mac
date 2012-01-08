@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* callback_macAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* callback_macAppDelegate.m */; };
-		300528CE116DD6D400C4263B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300528CD116DD6D400C4263B /* WebKit.framework */; };
 		3070C2DB118B65E400245025 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070C2DA118B65E400245025 /* Utils.m */; };
 		3070C365118B845100245025 /* WebViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070C364118B845100245025 /* WebViewDelegate.m */; };
 		3070C381118B8DB100245025 /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 3070C380118B8DB100245025 /* Sound.m */; };
@@ -19,6 +18,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E91E2744148A0AF700DCB657 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E91E2743148A0AF700DCB657 /* index.html */; };
+		FA30079A14B8E77600417138 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300528CD116DD6D400C4263B /* WebKit.framework */; };
 		FA37DE1514B7FCF60045A520 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE1414B7FCF60045A520 /* Dock.m */; };
 		FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37DE1F14B8044E0045A520 /* Growl.framework */; };
 		FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA37DE2314B808150045A520 /* Growl.framework */; };
@@ -87,8 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA30079A14B8E77600417138 /* WebKit.framework in Frameworks */,
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
-				300528CE116DD6D400C4263B /* WebKit.framework in Frameworks */,
 				FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
