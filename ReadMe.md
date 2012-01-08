@@ -8,21 +8,34 @@ Make sure you have installed the latest Mac OSX Core Library. Download at [http:
 
 ##API
 
-callback.app.terminate()
-callback.app.activate()
-callback.app.hide()
-callback.app.unhide()
-callback.app.beep()
 
-callback.path.application
-callback.path.resource
+    // Quit application
+    callback.app.terminate()
 
-callback.dock.badge
+    // Activate application (bring to front)
+    callback.app.activate()
+    
+    // Hide application
+    callback.app.hide()
+    
+    // Un-hide application
+    callback.app.unhide()
+    
+    // System Beep
+    callback.app.beep()
 
-callback.sound.play(name)
-callback.sound.playSystem(name)
+    // Path to application
+    callback.path.application
+    
+    // Path to application's resources
+    callback.path.resource
 
-callback.growl.notify({
-  title: '',
-  content: ''
-});
+    callback.dock.badge
+
+    callback.sound.play(name)
+    callback.sound.playSystem(name)
+
+    callback.growl.notify({
+      title: '',
+      content: ''
+    });
