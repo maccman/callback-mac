@@ -32,15 +32,15 @@
     self.contentView.alphaValue = 1.0;
 }
 
-- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication
-                    hasVisibleWindows:(BOOL)flag
-{
-	if( !flag ) {
-        [self.window makeKeyAndOrderFront:nil];
-        return NO;
-    }
-	
-	return YES;
-}
+//- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication
+//                    hasVisibleWindows:(BOOL)flag
+//{
+//	if( !flag ) {
+//        [self.window makeKeyAndOrderFront:nil];
+//        return NO;
+//    }
+//	
+//	return YES;
+//}
 
 @end
