@@ -1,11 +1,3 @@
-//
-//  Utils.h
-//  callback-mac
-//
-//  Shazron Abdullah
-//  Copyright 2010 Nitobi Software Inc. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 #define DEG_EPS 0.001

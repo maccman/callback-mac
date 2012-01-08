@@ -1,11 +1,3 @@
-//
-//  ContentView.m
-//  callback-mac
-//
-//  Created by shazron on 10-04-19.
-//  Copyright 2010 Nitobi Software Inc. All rights reserved.
-//
-
 #import "ContentView.h"
 #import "WebViewDelegate.h"
 #import "callback_macAppDelegate.h"

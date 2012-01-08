@@ -1,11 +1,3 @@
-//
-//  Growl.m
-//  callback-mac
-//
-//  Created by Alex MacCaw on 06/01/2012.
-//  Copyright (c) 2012 Nitobi Software Inc. All rights reserved.
-//
-
 #import "Growl.h"
 
 @implementation Growl
@@ -59,7 +51,6 @@
 
 #pragma mark WebScripting Protocol
 
-/* checks whether a selector is acceptable to be called from JavaScript */
 + (BOOL) isSelectorExcludedFromWebScript:(SEL)selector
 {
     if (selector == @selector(notify:))  
@@ -68,7 +59,6 @@
     return YES;  
 }
 
-/* helper function so we don't have to have underscores and stuff in js to refer to the right method */
 + (NSString*) webScriptNameForSelector:(SEL)selector
 {
 	id	result = nil;

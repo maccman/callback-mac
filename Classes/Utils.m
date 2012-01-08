@@ -1,11 +1,3 @@
-//
-//  Utils.m
-//  VanGuide
-//
-//  Created by shazron on 09-12-03.
-//  Copyright 2009 Nitobi Software Inc. All rights reserved.
-//
-
 #import "Utils.h"
 
 static Utils* sharedInstance = nil;
