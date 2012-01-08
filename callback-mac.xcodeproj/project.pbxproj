@@ -19,12 +19,12 @@
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		E91E2744148A0AF700DCB657 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E91E2743148A0AF700DCB657 /* index.html */; };
 		FA30079A14B8E77600417138 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300528CD116DD6D400C4263B /* WebKit.framework */; };
-		FA37DE1514B7FCF60045A520 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE1414B7FCF60045A520 /* Dock.m */; };
 		FA37DE2014B8044E0045A520 /* Growl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA37DE1F14B8044E0045A520 /* Growl.framework */; };
 		FA37DE2414B808150045A520 /* Growl.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FA37DE2314B808150045A520 /* Growl.framework */; };
 		FA37DE2714B8088D0045A520 /* Growl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA37DE2614B8088D0045A520 /* Growl.m */; };
-		FA5A63E114BA0A3C00E7CC30 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A63E014BA0A3C00E7CC30 /* Path.m */; };
-		FA5A63E514BA0C4800E7CC30 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A63E414BA0C4800E7CC30 /* App.m */; };
+		FA4ED07814BA2C9D00C57093 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4ED07314BA2C9D00C57093 /* App.m */; };
+		FA4ED07914BA2C9D00C57093 /* Dock.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4ED07514BA2C9D00C57093 /* Dock.m */; };
+		FA4ED07A14BA2C9D00C57093 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4ED07714BA2C9D00C57093 /* Path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -76,16 +76,16 @@
 		8D1107310486CEB800E47090 /* callback.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = callback.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Callback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Callback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91E2743148A0AF700DCB657 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		FA37DE1314B7FCF60045A520 /* Dock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dock.h; sourceTree = "<group>"; };
-		FA37DE1414B7FCF60045A520 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dock.m; sourceTree = "<group>"; };
 		FA37DE1F14B8044E0045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FA37DE2314B808150045A520 /* Growl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Growl.framework; sourceTree = "<group>"; };
 		FA37DE2514B8088D0045A520 /* Growl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Growl.h; path = Classes/Commands/Growl.h; sourceTree = "<group>"; };
 		FA37DE2614B8088D0045A520 /* Growl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Growl.m; path = Classes/Commands/Growl.m; sourceTree = "<group>"; };
-		FA5A63DF14BA0A3B00E7CC30 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
-		FA5A63E014BA0A3C00E7CC30 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
-		FA5A63E314BA0C4800E7CC30 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
-		FA5A63E414BA0C4800E7CC30 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
+		FA4ED07214BA2C9D00C57093 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App.h; path = Classes/Commands/App.h; sourceTree = "<group>"; };
+		FA4ED07314BA2C9D00C57093 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = Classes/Commands/App.m; sourceTree = "<group>"; };
+		FA4ED07414BA2C9D00C57093 /* Dock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dock.h; path = Classes/Commands/Dock.h; sourceTree = "<group>"; };
+		FA4ED07514BA2C9D00C57093 /* Dock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dock.m; path = Classes/Commands/Dock.m; sourceTree = "<group>"; };
+		FA4ED07614BA2C9D00C57093 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Path.h; path = Classes/Commands/Path.h; sourceTree = "<group>"; };
+		FA4ED07714BA2C9D00C57093 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Path.m; path = Classes/Commands/Path.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,16 +193,16 @@
 		3070C37B118B8D8500245025 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				FA4ED07214BA2C9D00C57093 /* App.h */,
+				FA4ED07314BA2C9D00C57093 /* App.m */,
+				FA4ED07414BA2C9D00C57093 /* Dock.h */,
+				FA4ED07514BA2C9D00C57093 /* Dock.m */,
+				FA4ED07614BA2C9D00C57093 /* Path.h */,
+				FA4ED07714BA2C9D00C57093 /* Path.m */,
 				3070C37F118B8DB100245025 /* Sound.h */,
 				3070C380118B8DB100245025 /* Sound.m */,
-				FA37DE1314B7FCF60045A520 /* Dock.h */,
-				FA37DE1414B7FCF60045A520 /* Dock.m */,
 				FA37DE2514B8088D0045A520 /* Growl.h */,
 				FA37DE2614B8088D0045A520 /* Growl.m */,
-				FA5A63DF14BA0A3B00E7CC30 /* Path.h */,
-				FA5A63E014BA0A3C00E7CC30 /* Path.m */,
-				FA5A63E314BA0C4800E7CC30 /* App.h */,
-				FA5A63E414BA0C4800E7CC30 /* App.m */,
 			);
 			name = Commands;
 			sourceTree = "<group>";
@@ -280,10 +280,10 @@
 				3070C2DB118B65E400245025 /* Utils.m in Sources */,
 				3070C365118B845100245025 /* WebViewDelegate.m in Sources */,
 				3070C381118B8DB100245025 /* Sound.m in Sources */,
-				FA37DE1514B7FCF60045A520 /* Dock.m in Sources */,
 				FA37DE2714B8088D0045A520 /* Growl.m in Sources */,
-				FA5A63E114BA0A3C00E7CC30 /* Path.m in Sources */,
-				FA5A63E514BA0C4800E7CC30 /* App.m in Sources */,
+				FA4ED07814BA2C9D00C57093 /* App.m in Sources */,
+				FA4ED07914BA2C9D00C57093 /* Dock.m in Sources */,
+				FA4ED07A14BA2C9D00C57093 /* Path.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
